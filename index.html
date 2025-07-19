@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntokozo Ntombela | Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this in your head section -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="typing-text" id="typing-text"></div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Ntokozo</span>
+            </a>
+            
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-container" id="nav-container">
+                <span class="close-btn" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </span>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Ntokozo_Ntombela_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">View Resume</a></li>
+                </ul>
+                
+                <div class="theme-toggle-container">
+                    <i class="fas fa-sun theme-icon"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <i class="fas fa-moon theme-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+     <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <!-- Animated Background Elements -->
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-circle circle-3"></div>
+            <div class="bg-circle circle-4"></div>
+            <div class="bg-circle circle-5"></div>
+            
+            <img src="images/IMG_20250320_154914.jpg" alt="Ntokozo Ntombela" class="profile-image">
+            <h1 class="rolling-name">Ntokozo Ntombela</h1>
+            <div class="title">Aspired Software Engineer</div>
+            <p>
+                Full-stack developer specializing in Python, C#, Java, and web technologies.
+                Passionate about building secure, scalable, and user-friendly applications.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/ntokozo078" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:ntombelan098@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/ntokozo-ntombela-ba662235a" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <p>
+                I'm a passionate Software Engineer currently pursuing my Bachelor of Information and Communication Technology at Durban University of Technology. My journey in tech has equipped me with skills across multiple programming languages and frameworks, with a particular focus on creating secure, scalable, and user-friendly applications.
+            </p>
+            <p style="margin-top: 1.5rem;">
+                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers. I believe in continuous learning and staying updated with the latest industry trends to deliver cutting-edge solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="project-card" data-animate>
+            <!-- Project: MEDICODE -->
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1170&q=80" alt="Clinic Booking System" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Clinic Booking System (MEDICODE)</h3>
+                    <p class="project-description">
+                        Web-based appointment scheduling / clinical support system using ASP.NET & C# (MVC). Features patient registration, doctor management, and booking flow.
+                    </p>
+                    <div class="tech-used">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">ASP.NET</span>
+                        <span class="tech-tag">MVC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ntokozo078/MEDICODE" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project: Voting System -->
+            <div class="project-card" data-animate>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1170&q=80" alt="Voting System" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Voting System</h3>
+                    <p class="project-description">
+                        Secure Flask + SQLAlchemy voting platform with role-based access control, vote integrity, and authentication-focused security practices.
+                    </p>
+                    <div class="tech-used">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Nqophamlando/Infinite-Iterator" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project: Peer Tutoring App -->
+            <div class="project-card" data-animate>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1170&q=80" alt="Peer Tutoring App" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Peer Tutoring App</h3>
+                    <p class="project-description">
+                        Android (Java + Firebase) app that connects students to peer tutors via auth-backed matching, profile data and realtime updates.
+                    </p>
+                    <div class="tech-used">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Android</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ntokozo078/peertutoringapp" target="_blank" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container">
+        <div class="section-title">
+            <h2>Certifications</h2>
+        </div>
+        <div class="certification-item">
+            <img src="images/Linux.png" alt="Linux Fundamentals Certificate" class="cert-image">
+            <div class="cert-content">
+                <h3 class="certification-title">Linux Fundamentals</h3>
+                <p class="certification-institution">Cisco Academy (Online) | July 2024 — November 2024</p>
+                <p>
+                    Completed Linux Fundamentals Certificate, gaining hands-on experience with CLI for administrative tasks and troubleshooting. Built a solid understanding of Linux environments used in development, cloud, and cybersecurity.
+                </p>
+            </div>
+        </div>
+        
+        <div class="certification-item">
+            <img src="images/introdution to cyber.png" alt="Introduction to Cyber Security Certificate" class="cert-image">
+            <div class="cert-content">
+                <h3 class="certification-title">Introduction to Cyber Security</h3>
+                <p class="certification-institution">Cisco Academy (Online) | March 2025 — May 2025</p>
+                <p>
+                    Covered key principles like the CIA triad, threat types, and security best practices. Learned to identify and mitigate common cyber threats.
+                </p>
+            </div>
+        </div>
+        
+        <div class="certification-item">
+            <img src="images/Ne.png" alt="Network Essentials Certificate" class="cert-image">
+            <div class="cert-content">
+                <h3 class="certification-title">Network Essentials</h3>
+                <p class="certification-institution">Cisco Academy (Online) | April 2025 — July 2025</p>
+                <p>
+                    Learned networking fundamentals: IP addressing, subnetting, TCP/IP, DNS, and topologies. Gained practical troubleshooting skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <div class="section-title">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-java skill-icon"></i>
+                <span class="skill-name">Java (Mobile)</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python skill-icon"></i>
+                <span class="skill-name">Python</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-code skill-icon"></i>
+                <span class="skill-name">C#</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <span class="skill-name">HTML & CSS</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js skill-icon"></i>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database skill-icon"></i>
+                <span class="skill-name">SQL</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-linux skill-icon"></i>
+                <span class="skill-name">Linux</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div id="form-message"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text">© 2025 Ntokozo Ntombela. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
