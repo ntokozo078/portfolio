@@ -1,6 +1,6 @@
 # Ntokozo Ntombela - Portfolio Website
 
-![Portfolio Screenshot](<img width="1593" height="825" alt="image" src="https://github.com/user-attachments/assets/1e13d9dc-18e3-4459-b570-84a141e53de6" />
+
 )
 
 A modern, responsive portfolio website showcasing my skills, projects, and certifications as a Software Engineer.
